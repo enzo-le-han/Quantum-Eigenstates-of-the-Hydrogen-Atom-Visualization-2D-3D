@@ -57,7 +57,7 @@ max=100000
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle('Interactive Isosurface Level')
+        self.setWindowTitle('Interactive Isosurface Level : (n, l, m) = ('+str(n)+', '+str(l)+', '+str(m)+')')
         self.canvas = vispy.scene.SceneCanvas(keys='interactive', show=True)
         self.view = self.canvas.central_widget.add_view()
 
